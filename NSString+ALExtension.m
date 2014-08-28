@@ -16,8 +16,8 @@
   return [NSString stringWithFormat:@"?%@",[dateFormatter stringFromDate:[NSDate date]]];
 }
 
-+ (NSString*)timeString:(NSString *)unixTime format:(MHPrettyDateFormat)format{
-  NSDate *date = [NSDate dateWithTimeIntervalSince1970:[unixTime doubleValue]];
++ (NSString*)timeString:(NSTimeInterval)unixTime format:(MHPrettyDateFormat)format{
+  NSDate *date = [NSDate dateWithTimeIntervalSince1970:unixTime];
   
   NSString *timeString = [MHPrettyDate prettyDateFromDate:date
                                                withFormat:format];

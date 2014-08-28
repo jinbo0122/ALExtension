@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UILabel (ALExtension)
-- (id)initWithFrame:(CGRect)frame
++ (UILabel *)initWithFrame:(CGRect)frame
             bgColor:(UIColor *)bgColor
           textColor:(UIColor *)textColor
                text:(NSString *)text

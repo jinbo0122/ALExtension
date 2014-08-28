@@ -11,7 +11,7 @@
 #import "MHPrettyDate/MHPrettyDate.h"
 @interface NSString (ALExtension)
 + (NSString *)currentTimeString;
-+ (NSString*)timeString:(NSString *)unixTime format:(MHPrettyDateFormat)format;
++ (NSString*)timeString:(NSTimeInterval)unixTime format:(MHPrettyDateFormat)format;
 + (NSString *)stringByMD5Encoding:(NSString*)inputString;
 + (NSString *)stringByDecodingURLFormat:(NSString*)inputString;
 + (NSString *)stringByEncodingURLFormat:(NSString*)inputString;
