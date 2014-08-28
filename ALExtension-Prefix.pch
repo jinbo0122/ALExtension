@@ -55,4 +55,5 @@
 #import "ALEmojiKeyboard/ALEmojiKeyBoardView.h"
 #import "ALEmojiKeyboard/ALEmojiPageView.h"
 #import "UIButton+ALExtension.h"
+#import "UILabel+ALExtension.h"
 #endif
