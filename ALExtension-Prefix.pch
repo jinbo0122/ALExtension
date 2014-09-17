@@ -21,6 +21,7 @@
 #import "UIView+ALExtension.h"
 #import "SDWebImage/SDImageCache.h"
 #import "SDWebImage/SDWebImageManager.h"
+#import "SDWebImage/UIImage+WebP.h"
 #import "DDLog/DDLog.h"
 #import "DDLog/Sprocket.h"
 #import "DDLog/DDFileLogger.h"
