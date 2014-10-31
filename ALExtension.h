@@ -9,7 +9,8 @@
 #ifndef pandora_ALExtension_h
 #define pandora_ALExtension_h
 
-
-
+#define UIScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define UIScreenHeight [UIScreen mainScreen].bounds.size.height
+#define UIScreenScale  (NSInteger)[UIScreen mainScreen].scale
 
 #endif
