@@ -12,5 +12,7 @@
 #define UIScreenWidth  [UIScreen mainScreen].bounds.size.width
 #define UIScreenHeight [UIScreen mainScreen].bounds.size.height
 #define UIScreenScale  (NSInteger)[UIScreen mainScreen].scale
+#define isRunningOnIOS7           [[UIDevice currentDevice] isIOS7]
+#define isRunningOnIOS8           [[UIDevice currentDevice] isIOS8]
 
 #endif
