@@ -17,14 +17,23 @@
                       font:(UIFont *)font
              numberOfLines:(NSInteger)numberOfLines{
   UILabel *label = [[UILabel alloc] initWithFrame:frame];
-  if (label) {
-    label.backgroundColor = bgColor;
-    label.text = text;
-    label.textColor = textColor;
-    label.textAlignment = alignment;
-    label.font = font;
-    label.numberOfLines = numberOfLines;
-  }
+  label.backgroundColor = bgColor;
+  label.text = text;
+  label.textColor = textColor;
+  label.textAlignment = alignment;
+  label.font = font;
+  label.numberOfLines = numberOfLines;
+  return label;
+}
+
++ (UILabel *)titleLabel:(NSString *)titleText color:(UIColor*)color{
+  UILabel *label = [UILabel initWithFrame:CGRectZero
+                                  bgColor:[UIColor clearColor]
+                                textColor:color
+                                     text:titleText
+                            textAlignment:NSTextAlignmentCenter
+                                     font:[UIFont boldSystemFontOfSize:18] numberOfLines:1];
+  [label sizeToFit];
   return label;
 }
 @end

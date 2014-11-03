@@ -16,4 +16,7 @@
       textAlignment:(NSTextAlignment)alignment
                font:(UIFont *)font
       numberOfLines:(NSInteger)numberOfLines;
+
++ (UILabel *)titleLabel:(NSString *)titleText color:(UIColor*)color;
+
 @end
